@@ -104,7 +104,7 @@ export default {
 
 
 body {
-  background-image: url(/assets/sky.png);
+  background-image: url("sky.png");
 }
 
 #drinkImage {
