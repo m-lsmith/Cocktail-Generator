@@ -1,4 +1,8 @@
-# vue-starter-project
+# Cocktail Generator
+
+## Live Demo
+https://cocktail-generator.pages.dev/
+
 
 ## Project setup
 ```
