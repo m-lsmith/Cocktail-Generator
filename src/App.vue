@@ -12,7 +12,7 @@
 
     <div id="rightSide">
             <div id="drinkImageCont">
-              <img id="drinkImage" :src= drinksInfo.strDrinkThumb>
+              <img id="drinkImage" class="mask" :src= drinksInfo.strDrinkThumb>
             </div>
             
     </div>
@@ -110,6 +110,12 @@ body {
 #drinkImage {
   width: 75%;
   height: auto;
+  border-radius: 50% 20% / 10% 40%;
+  position: relative;
+}
+
+#drinkImage::after {
+  position: absolute;
 }
 
 #container {
@@ -118,7 +124,7 @@ body {
   align-items: center;
   background-color: hwb(240 87% 0%);
   width: 50%;
-  height: 500px;
+  height: 80vh;
   border: rgba(240, 46, 170, 0.4) 2px solid;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
   margin: auto;
@@ -128,6 +134,7 @@ body {
 #leftSide {
   padding-left: 20px;
   width: 20%;
+  
 }
 
 
