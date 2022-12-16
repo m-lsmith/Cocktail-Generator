@@ -1,4 +1,5 @@
 <template>
+  <title>Cocktail Generator</title>
   <div class="gradient" id="container">
     <div id="leftSide">
         <h1> Cocktail Generator </h1>
@@ -108,34 +109,50 @@ body {
 }
 
 #drinkImage {
-  width: 75%;
+  width: 60%;
   height: auto;
   border-radius: 50% 20% / 10% 40%;
   position: relative;
+  filter: drop-shadow(0 0 1rem grey);
 }
 
-#drinkImage::after {
-  position: absolute;
-}
 
 #container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hwb(240 87% 0%);
+  
   width: 50%;
   height: 80vh;
   border: rgba(240, 46, 170, 0.4) 2px solid;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
   margin: auto;
   font-family: 'Roboto Mono', monospace;
+  background-color: #cedeff;
 }
 
 #leftSide {
   padding-left: 20px;
-  width: 20%;
+  width: 30%;
   
 }
 
+
+@media screen and (max-width: 601px) {
+  p {
+  font-size: 3vw;
+}
+  #container {
+  display: flex;
+  margin-top: auto;
+  width: 100%;
+  height: 90vh;
+    
+  }
+  #app {
+    margin-top: 5px;
+  }
+
+}
 
 </style>
